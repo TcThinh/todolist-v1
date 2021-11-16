@@ -1,0 +1,20 @@
+.todo__filters--button {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 2px;
+
+    flex: 1;
+    align-items: center;
+
+    &:hover {
+        outline: 1px solid rgb(143, 143, 143);
+    }
+
+    &-actived {
+        border: 1px solid rgb(143, 143, 143);
+    }
+}

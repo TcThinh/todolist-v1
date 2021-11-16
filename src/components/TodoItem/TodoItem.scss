@@ -1,0 +1,40 @@
+.todo__item {
+    margin: 0;
+    padding: 10px;
+
+    &:hover {
+        transition: all 1s ease;
+        .todo__item--btn-remove {
+            display: inline-block;
+            transition: all 1s ease-in-out;
+        }
+    }
+
+    &--completed {
+        opacity: 0.5;
+        text-decoration: line-through;
+    }
+
+    & * {
+        margin: 0px 3px 0px 3px;
+    }
+
+    &--icon {
+        $size: 40px;
+        width: $size;
+        height: $size;
+        cursor: pointer;
+    }
+
+    &--title {
+        width: 60%;
+        padding: 5px;
+        font-size: 1.4rem;
+        border: none;
+    }
+
+    &--btn-remove {
+        display: none;
+        float: right;
+    }
+}
