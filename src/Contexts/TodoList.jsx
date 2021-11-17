@@ -49,6 +49,7 @@ export const TodoListProvider = ({ children }) => {
     newTodoList[index].isCompleted = !item.isCompleted;
     console.log("onTodoCheckItemClick")
     setTodoList(newTodoList);
+    setTodoListShow(newTodoList);
   }
 
   const onTodoRemoveItemClick = (todo) => {
@@ -58,6 +59,7 @@ export const TodoListProvider = ({ children }) => {
     newTodoList.splice(index, 1);
     console.log("onTodoRemoveItemClick")
     setTodoList(newTodoList);
+     setTodoListShow(newTodoList);
   }
 
   const onValueUpdated = (todo) => {
